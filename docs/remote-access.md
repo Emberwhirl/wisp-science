@@ -1,6 +1,12 @@
 # Remote web access
 
 Open the Wisp running on your computer from a phone or any browser (#1460).
+An experimental [native iPhone and iPad client](../apps/ios/README.md) also uses
+the same relay and connection code. It requires iOS/iPadOS 17; real remote work
+requires an online Wisp host, as a relay alone does not run the agent. The native
+client also includes a bundled offline demo, available from “体验演示项目” on the
+connection screen without a server or account. Open its Xcode project to build
+or install it on a development device.
 The desktop dials out to your own `wisp-relay`; no inbound port is opened on
 the computer. One relay serves any number of computers: each computer has its
 own connection code, and browsers reach the computer whose code they hold.
